@@ -61,6 +61,11 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('AHardwareBuffer_lockPlanes')
         .clear_symbol_version('AHardwareBuffer_release')
         .clear_symbol_version('AHardwareBuffer_unlock'),
+    (
+        'odm/lib64/libailab_rawhdr.so',
+        'odm/lib64/libxmi_high_dynamic_range_cdsp.so',
+    ): blob_fixup()
+        .strip_debug_sections(),
 }
 
 module = ExtractUtilsModule(
