@@ -36,7 +36,7 @@ PRODUCT_COPY_FILES += \
 
 # PowerShare
 PRODUCT_PACKAGES += \
-    vendor.lineage.powershare@1.0-service.default
+    vendor.lineage.powershare-service.default
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
