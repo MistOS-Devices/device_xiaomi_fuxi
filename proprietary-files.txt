@@ -1,4 +1,4 @@
-# Unpinned blobs from fuxi (OS2.0.3.0.VMCCNXM)
+# Unpinned blobs from fuxi (OS2.0.101.0.VMCMIXM)
 
 # ACDB
 odm/etc/acdbdata/Tutu/Tutu_acdb_cal.acdb
@@ -403,7 +403,6 @@ odm/lib64/libcom.xiaomi.metadatautils.so
 odm/lib64/libcom.xiaomi.pluginutils.so
 odm/lib64/libcommonchiutils.so
 odm/lib64/libdeflicker.so
-odm/lib64/libdeflickerNM.so
 odm/lib64/libdualcam_optical_zoom_control.so
 odm/lib64/libdualcam_video_optical_zoom.so
 odm/lib64/libellv.so
@@ -690,7 +689,6 @@ odm/lib64/camera/plugins/com.xiaomi.plugin.arcsoftsll.so
 odm/lib64/camera/plugins/com.xiaomi.plugin.capbokeh.so
 odm/lib64/camera/plugins/com.xiaomi.plugin.capdepth.so
 odm/lib64/camera/plugins/com.xiaomi.plugin.caphdr.so
-odm/lib64/camera/plugins/com.xiaomi.plugin.deflicker.so
 odm/lib64/camera/plugins/com.xiaomi.plugin.depurple.so
 odm/lib64/camera/plugins/com.xiaomi.plugin.frontbokeh.so
 odm/lib64/camera/plugins/com.xiaomi.plugin.gpu.so
