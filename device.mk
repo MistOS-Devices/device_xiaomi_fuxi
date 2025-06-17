@@ -29,6 +29,7 @@ PRODUCT_COPY_FILES += \
 
 # Overlay
 PRODUCT_PACKAGES += \
+    EuiccResFuxi \
     FrameworkResOverlayFuxi \
     SystemUIOverlayFuxi \
     SettingsOverlayFuxi
