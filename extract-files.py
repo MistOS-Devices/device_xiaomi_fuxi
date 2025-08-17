@@ -48,7 +48,6 @@ blob_fixups: blob_fixups_user_type = {
     (
         'odm/lib64/libcamxcommonutils.so',
         'odm/lib64/hw/com.qti.chi.override.so',
-        'odm/lib64/hw/camera.xiaomi.so',
         'odm/lib64/libchifeature2.so',
         'odm/lib64/libmialgoengine.so'
     ): blob_fixup()
@@ -66,6 +65,9 @@ blob_fixups: blob_fixups_user_type = {
         'odm/lib64/libxmi_high_dynamic_range_cdsp.so',
     ): blob_fixup()
         .strip_debug_sections(),
+    'odm/lib64/hw/camera.xiaomi.so': blob_fixup()
+        .add_needed('libprocessgroup_shim.so')
+        .replace_needed('libui.so', 'libui-v34.so'),
 }
 
 module = ExtractUtilsModule(
