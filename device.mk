@@ -17,8 +17,6 @@ PRODUCT_COPY_FILES += \
 
 # eUICC
 PRODUCT_PACKAGES += \
-    EuiccPolicy \
-    EuiccPolicyXiaomi \
     XiaomiEuicc
 
 PRODUCT_COPY_FILES += \
