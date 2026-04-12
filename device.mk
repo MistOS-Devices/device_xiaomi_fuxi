@@ -52,7 +52,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
-# Limit dex2oat to use fewer threads to preserve RAM/Stability
-PRODUCT_PROPERTY_OVERRIDES += \
-    dalvik.vm.dex2oat-threads=4 \
-    dalvik.vm.boot-dex2oat-threads=4
+# # Limit dex2oat to use fewer threads to preserve RAM/Stability
+# PRODUCT_PROPERTY_OVERRIDES += \
+#     dalvik.vm.dex2oat-threads=4 \
+#     dalvik.vm.boot-dex2oat-threads=4
