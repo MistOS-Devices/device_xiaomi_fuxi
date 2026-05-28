@@ -1,6 +1,56 @@
 [
   {
-    "repository": "android_device_xiaomi_sm8550-common",
-    "target_path": "device/xiaomi/sm8550-common"
+    "repository": "LineageOS/android_hardware_xiaomi",
+    "target_path": "hardware/xiaomi",
+    "remote": "github",
+    "branch": "lineage-23.2"
+  },
+  {
+    "repository": "device_xiaomi_sm8550-common",
+    "target_path": "device/xiaomi/sm8550-common",
+    "remote": "mist-device",
+    "branch": "16.2"
+  },
+  {
+    "repository": "LineageOS/android_kernel_xiaomi_sm8550",
+    "target_path": "kernel/xiaomi/sm8550",
+    "remote": "github",
+    "branch": "lineage-23.2"
+  },
+  {
+    "repository": "LineageOS/android_kernel_xiaomi_sm8550-modules",
+    "target_path": "kernel/xiaomi/sm8550-modules",
+    "remote": "github",
+    "branch": "lineage-23.2"
+  },
+  {
+    "repository": "LineageOS/android_kernel_xiaomi_sm8550-devicetrees",
+    "target_path": "kernel/xiaomi/sm8550-devicetrees",
+    "remote": "github",
+    "branch": "lineage-23.2"
+  },
+  {
+    "repository": "vendor_xiaomi_fuxi",
+    "target_path": "vendor/xiaomi/fuxi",
+    "remote": "mist-device",
+    "branch": "16.2"
+  },
+  {
+    "repository": "vendor_xiaomi_sm8550-common",
+    "target_path": "vendor/xiaomi/sm8550-common",
+    "remote": "mist-device",
+    "branch": "16.2"
+  },
+  {
+    "repository": "vendor_xiaomi_camera",
+    "target_path": "vendor/xiaomi/camera",
+    "remote": "mist-device",
+    "branch": "16.2"
+  },
+  {
+    "repository": "neural0x/vendor_apps_prebuilts",
+    "target_path": "vendor/apps/prebuilts",
+    "remote": "gitlab",
+    "branch": "main"
   }
 ]
