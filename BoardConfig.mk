@@ -18,6 +18,20 @@ _lfs_pull := $(shell \
     fi \
 )
 
+# --- Auto-merge MiuiCamera Split APKs ---
+_camera_merge := $(shell \
+    APK_DIR="vendor/xiaomi/camera/proprietary/system/priv-app/MiuiCamera"; \
+    if [ -d "$$APK_DIR" ] && [ ! -f "$$APK_DIR/MiuiCamera.apk" ]; then \
+        cat $$APK_DIR/MiuiCamera.apk.part* > $$APK_DIR/MiuiCamera.apk 2>/dev/null; \
+        echo "SUCCESS"; \
+    fi \
+)
+
+# Force printing to the Jenkins console log when a merge occurs
+ifeq ($(_camera_merge),SUCCESS)
+    $(info [MistOS-CI] Successfully merged MiuiCamera split APK parts!)
+endif
+
 DEVICE_PATH := device/xiaomi/fuxi
 
 # Inherit from sm8550-common
