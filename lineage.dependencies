@@ -6,7 +6,7 @@
     "branch": "lineage-23.2"
   },
   {
-    "repository": "MistOS-Devices/device_xiaomi_sm8550-common",
+    "repository": "device_xiaomi_sm8550-common",
     "target_path": "device/xiaomi/sm8550-common",
     "remote": "mist-device",
     "branch": "16.2"
@@ -30,19 +30,19 @@
     "branch": "lineage-23.2"
   },
   {
-    "repository": "MistOS-Devices/vendor_xiaomi_fuxi",
+    "repository": "vendor_xiaomi_fuxi",
     "target_path": "vendor/xiaomi/fuxi",
     "remote": "mist-device",
     "branch": "16.2"
   },
   {
-    "repository": "MistOS-Devices/vendor_xiaomi_sm8550-common",
+    "repository": "vendor_xiaomi_sm8550-common",
     "target_path": "vendor/xiaomi/sm8550-common",
     "remote": "mist-device",
     "branch": "16.2"
   },
   {
-    "repository": "MistOS-Devices/vendor_xiaomi_camera",
+    "repository": "vendor_xiaomi_camera",
     "target_path": "vendor/xiaomi/camera",
     "remote": "mist-device",
     "branch": "16.2"
