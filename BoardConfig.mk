@@ -3,6 +3,20 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 #
+# --- Auto-resolve Git LFS for proprietary firmware ---
+# This executes instantly during the makefile parsing phase,
+# which happens immediately after roomservice completes its sync.
+_lfs_pull := $(shell \
+    MODEM="vendor/xiaomi/fuxi/radio/modem.img"; \
+    if [ -f "$$MODEM" ]; then \
+        if [ $$(stat -c%s "$$MODEM" 2>/dev/null || echo 0) -lt 1000000 ]; then \
+            echo "Jenkins/AOSP: Pulling missing LFS blobs for fuxi..."; \
+            cd vendor/xiaomi/fuxi && \
+            git config lfs.url "https://github.com/MistOS-Devices/vendor_xiaomi_fuxi.git/info/lfs" && \
+            git lfs pull; \
+        fi; \
+    fi \
+)
 
 DEVICE_PATH := device/xiaomi/fuxi
 
