@@ -12,7 +12,7 @@
     "branch": "16.2"
   },
   {
-    "repository": "MistOS-Devices/android_kernel_xiaomi_sm8550",
+    "repository": "MistOS-Devices/kernel_xiaomi_sm8550",
     "target_path": "kernel/xiaomi/sm8550",
     "remote": "github",
     "branch": "16.2"
